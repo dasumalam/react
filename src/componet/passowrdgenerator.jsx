@@ -56,7 +56,7 @@ function Model() {
           </button>
         </div>
 
-        <div className="mt-5 sm:mt-6 space-y-4">
+        <div className="mt-5 sm:mt-6">
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-gray-800">
             <div className="flex items-center gap-2 w-full sm:w-auto">
               <input
@@ -69,33 +69,33 @@ function Model() {
               />
               <label className="text-base sm:text-xl whitespace-nowrap">Length: {length}</label>
             </div>
-          </div>
 
-          <div className="flex items-center justify-center gap-3 sm:gap-4 text-gray-800">
-            <div className="flex items-center gap-2">
-              <input
-                id="number"
-                type="checkbox"
-                checked={number}
-                onChange={() => setnumber((prev) => !prev)}
-                className="accent-blue-500 w-4 h-4 cursor-pointer"
-              />
-              <label htmlFor="number" className="cursor-pointer text-base sm:text-xl">
-                Numbers
-              </label>
-            </div>
+            <div className="flex items-center justify-center gap-3 sm:gap-4">
+              <div className="flex items-center gap-2">
+                <input
+                  id="number"
+                  type="checkbox"
+                  checked={number}
+                  onChange={() => setnumber((prev) => !prev)}
+                  className="accent-blue-500 w-4 h-4 cursor-pointer"
+                />
+                <label htmlFor="number" className="cursor-pointer text-base sm:text-xl">
+                  Numbers
+                </label>
+              </div>
 
-            <div className="flex items-center gap-2">
-              <input
-                id="charcter"
-                type="checkbox"
-                checked={charcter}
-                onChange={() => setcharcter((prev) => !prev)}
-                className="accent-blue-500 w-4 h-4 cursor-pointer"
-              />
-              <label htmlFor="charcter" className="cursor-pointer text-base sm:text-xl">
-                Characters
-              </label>
+              <div className="flex items-center gap-2">
+                <input
+                  id="charcter"
+                  type="checkbox"
+                  checked={charcter}
+                  onChange={() => setcharcter((prev) => !prev)}
+                  className="accent-blue-500 w-4 h-4 cursor-pointer"
+                />
+                <label htmlFor="charcter" className="cursor-pointer text-base sm:text-xl">
+                  Characters
+                </label>
+              </div>
             </div>
           </div>
         </div>
